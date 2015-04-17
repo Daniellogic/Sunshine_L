@@ -103,7 +103,7 @@ public class ForecastFragment extends Fragment {
         fakeList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String forecast = forecastAdapter.getItem(position).toString();
+                String forecast = "lol " +forecastAdapter.getItem(position).toString();
                 Toast.makeText(getActivity(),forecast,Toast.LENGTH_SHORT).show();
                 Intent detailActivityIntent = new Intent(getActivity(), DetailActivity.class);
                 detailActivityIntent.putExtra(Intent.EXTRA_TEXT,forecast);
